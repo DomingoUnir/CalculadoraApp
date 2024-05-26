@@ -22,7 +22,21 @@ namespace CalculadoraApp.Core.Tests
             // Assert
             Assert.Equal(30.5, result);
 
+        }
 
+        [Fact]
+        public void SouldSubtractTwoNumbers()
+        {
+            // Arrange
+            var calculadora = new Calculadora();
+            var number1 = 10.3;
+            var number2 = 20.2;
+
+            // Act
+            var result = calculadora.Restar(number1, number2);
+
+            // Assert
+            Assert.Equal(-9.9, result);
         }
     }
 }
