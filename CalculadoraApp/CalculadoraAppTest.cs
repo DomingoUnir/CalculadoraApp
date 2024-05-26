@@ -8,19 +8,21 @@ namespace CalculadoraApp.Core.Tests
 {
     public class CalculadoraAppTest
     {
-
+        [Fact]
         public void ShouldSumTwoNumbers()
         {
             // Arrange
-            var calculadora = new CalculadoraApp();
-            var number1 = 10;
-            var number2 = 20;
+            var calculadora = new Calculadora();
+            var number1 = 10.3;
+            var number2 = 20.2;
 
             // Act
-            var result = calculadora.Somar(number1, number2);
+            var result = calculadora.Sumar(number1, number2);
 
             // Assert
-            Assert.AreEqual(30, result);
+            Assert.Equal(30.5, result);
+
+
         }
     }
 }
