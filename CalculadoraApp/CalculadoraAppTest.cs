@@ -12,15 +12,15 @@ namespace CalculadoraApp.Core.Tests
         public void ShouldSumTwoNumbers()
         {
             // Arrange
-            var calculadora = new Calculadora();
-            var number1 = 10.3;
-            var number2 = 20.2;
+            Calculadora calculadora = new Calculadora();
+            decimal number1 = 10.3m;
+            decimal number2 = 20.2m;
 
             // Act
             var result = calculadora.Sumar(number1, number2);
 
             // Assert
-            Assert.Equal(30.5, result);
+            Assert.Equal(30.5m, result);
 
         }
 
@@ -28,15 +28,15 @@ namespace CalculadoraApp.Core.Tests
         public void SouldSubtractTwoNumbers()
         {
             // Arrange
-            var calculadora = new Calculadora();
-            var number1 = 10.3;
-            var number2 = 20.2;
+            Calculadora calculadora = new Calculadora();
+            decimal number1 = 10.3m;
+            decimal number2 = 20.2m;
 
             // Act
-            var result = calculadora.Restar(number1, number2);
+            decimal result = calculadora.Restar(number1, number2);
 
             // Assert
-            Assert.Equal(-9.9, result);
+            Assert.Equal(-9.9m, result);
         }
     }
 }

@@ -1,15 +1,21 @@
 ﻿
+
 namespace CalculadoraApp.Core.Tests
 {
-    internal class Calculadora
+    public class Calculadora
     {
         public Calculadora()
         {
         }
 
-        public double Sumar(double numero1, double numero2)
+        public decimal Sumar(decimal numero1, decimal numero2)
         {
             return numero1 + numero2;
+        }
+
+        public decimal Restar(decimal numero1, decimal numero2)
+        {
+            return numero1 - numero2;
         }
     }
 }
