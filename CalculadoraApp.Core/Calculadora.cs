@@ -1,8 +1,4 @@
-﻿
-
-
-
-namespace CalculadoraApp.Core.Tests
+﻿namespace CalculadoraApp.Core
 {
     public class Calculadora
     {
